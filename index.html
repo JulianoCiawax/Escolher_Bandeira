@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 2) Faça uma página em HTML que mostre a bandeira de três países distintos. Quando o usuário clicar sobre a
+bandeira, envie o nome do país para um programa PHP que lá fará a distinção mostrando o nome de duas
+cidades do país selecionado e a língua que se fala neste país. -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Escolha uma bandeira</title>
+    <style>
+        .flag-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .flag-image {
+            width: 150px;
+            /* Largura da bandeira */
+            height: auto;
+        }
+
+        .country-name {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Escolha uma bandeira:</h1>
+
+    <div class="flag-container">
+        <a href="processa.php?pais=Brasil">
+            <img src="bandeira_brasil.png" alt="Bandeira do Brasil" class="flag-image">
+            <div class="country-name">Brasil</div>
+        </a>
+    </div>
+
+    <div class="flag-container">
+        <a href="processa.php?pais=Franca">
+            <img src="bandeira_franca.png" alt="Bandeira da França" class="flag-image">
+            <div class="country-name">França</div>
+        </a>
+    </div>
+
+    <div class="flag-container">
+        <a href="processa.php?pais=Japao">
+            <img src="bandeira_japao.png" alt="Bandeira do Japão" class="flag-image">
+            <div class="country-name">Japão</div>
+        </a>
+    </div>
+</body>
+
+</html>
